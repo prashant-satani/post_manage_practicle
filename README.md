@@ -11,14 +11,19 @@
 
 ## Setup Steps
 
-install dependency using composer & npm
+install dependency using composer
 
 ```bash
 composer install
-npm run dev
 ```
 
-Create database and config in .env
+Create .env from sample file .env.example
+
+Key generate using command
+
+```bash
+php artisan key:generate
+```
 
 Migrate tables into database
 
@@ -30,6 +35,9 @@ Seed default user Or register new from web
 
 ```bash
 php artisan db:seed --class=UserSeeder
+
+#username : test@example.com
+#password : password
 ```
 
 Seed other default data (Tags, ...)
@@ -41,6 +49,13 @@ Create symbolic link for file upload to local drivers
 
 ```bash
 php artisan storage:link
+```
+
+Generate assets using vite
+
+```bash
+npm install
+npm run build
 ```
 
 Start server 

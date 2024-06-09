@@ -9,6 +9,11 @@
     - Provide a "New Posts" button that, when clicked, displays a new set of random posts and hides the previous set.
     - Ensure no posts are repeated until all posts have been displayed. If all posts have been displayed, show a message indicating that there are no new posts.
 
+## Technology Info
+- PHP : 8.1
+- MySql : 8.0
+- Node : 16.*
+
 ## Setup Steps
 
 install dependency using composer
